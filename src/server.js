@@ -1,6 +1,7 @@
 import express from 'express';
 import { ENV } from './config/env.js';
 import { db } from './config/db.js';
+import { and, eq } from "drizzle-orm";
 import { favoritesTable } from './db/schema.js';
 import job from "./config/cron.js";
 
